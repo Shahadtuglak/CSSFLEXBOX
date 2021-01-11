@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    background-color: cyan;
+    /* display: flex; */
+    /* display : flex; IT wil  apply to the Parent Element to apply the Flex Property */
+    /* flex-direction: ; */
+    /* display : flex-direction: column;  Put the element is columns*/
+    /* display : flex-direction: row; put the elements in the Row */
+    /* justify-content: ; It work on Horizontal */
+    /* justify-content: center;  This will postition center like container in Bootstrap*/
+    /* justify-content: flex-end;  This will postition  the blank space at the End of the Portion*/
+    /* justify-content: flex-start; This will postition  the blank space at the start of the Portion*/
+    /* justify-content: space-around; This will put the space around te blocks and center */
+    /*  justify-content: space-between;  This will postition  the blank space at the only between of the Portion*/
+    /* align-items: ; It will work on Vertical */
+    /* align-items: center;  put element in center */
+    /* align-items: flex-start;  put element in start */
+    /* align-items: flex-end;  put element in end */
+    align-items: center;
+}
+
+section div {
+    padding: 20px;
+    border: 2px solid black;
+    /* width: 30%; */
+    flex-basis: 30%;
+}
+
+
+/* To make responsive we use media query */
+
+@media(min-width:768px) {
+    section {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.flexone {
+    /* flex: 1;  ( Child Element ) This Property will Divide the Portion according to its Value*/
+    background-color: red;
+}
+
+.flextwo {
+    /* flex: 1;  ( Child Element ) This Property will Divide the Portion according to its Value*/
+    background-color: green;
+}
+
+.flexthree {
+    /* flex: 1;  ( Child Element ) This Property will Divide the Portion according to its Value*/
+    background-color: yellow;
+}
+
+.flex-container {
+    display: flex;
+}
